@@ -1,0 +1,7 @@
+<div>
+  <div ng-repeat="eachTodo in displayServiceData.todos">
+    <div ng-hide="undoneClicked==='false' && eachTodo.done === 'false'"><input type="checkbox" ng-model="doneTodo" ng-click="onClickTodo(eachTodo)"/>{{eachTodo.todo}}{{eachTodo.done}}<button type="button"  ng-click="onClickTodoDelete(eachTodo)">x</button></div>
+  </div>
+  <div ng-click="onClickUndone()">UNDONE</div>
+  <div ng-click="onClickAll()">ALL</div>
+</div>
